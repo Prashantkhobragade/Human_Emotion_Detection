@@ -41,4 +41,4 @@ Here are a few potential areas for future improvement and development of the Hum
 This project builds upon various open-source libraries, frameworks, and datasets. We would like to acknowledge the contributions of the research community and express our gratitude to the creators and maintainers of these resources.
 
 ## License
-This project is licensed under the MIT License. Feel free to use, modify, and distribute the code and associated materials as per the terms of the license.
+This project is licensed under the [MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt). Feel free to use, modify, and distribute the code and associated materials as per the terms of the license.
