@@ -3,7 +3,7 @@
 This project aims to develop a computer vision (CV) model capable of detecting and classifying human emotions into three categories: angry, happy, and sad. The model utilizes deep learning techniques and is trained on a labeled dataset of facial images representing different emotional states.
 
 ## Dataset
-The dataset used for training and evaluation consists of a collection of facial images labeled with the corresponding emotions: angry, happy, and sad. Each image is preprocessed to extract the facial features necessary for emotion detection. The dataset is divided into three subsets: training, validation, and testing, to ensure accurate evaluation of the model's performance.
+The dataset used for training and evaluation consists of a collection of facial images labeled with the corresponding emotions: angry, happy, and sad. Each image is preprocessed to extract the facial features necessary for emotion detection. The dataset is divided into three subsets: training, validation, and testing, to ensure accurate evaluation of the model's performance. To generalize my model I used Data Augmentation.
 
 
 ## Evaluation
@@ -15,7 +15,7 @@ Once the ONNX quantization is applied to the emotion detection model, it can be 
 ## ONNX Quantization
 To reduce the model size and optimize its deployment, the ONNX quantization technique is applied. ONNX (Open Neural Network Exchange) is an open format for representing deep learning models, and quantization is a process that reduces the precision of model weights and activations to minimize memory requirements.
 
-By employing ONNX quantization, the size of the emotion detection model is reduced from 1GB to 83MB while still maintaining satisfactory accuracy and performance. This reduction in model size allows for more efficient storage, faster inference times, and enables deployment on resource-constrained environments.
+By employing ONNX quantization, the size of the emotion detection model is reduced from 1GB to 83MB while still maintaining satisfactory accuracy and performance. This reduction in model size allows for more efficient storage, faster inference times, and enables deployment in resource-constrained environments.
 
 ## **Tech Stack Used**
  1. Python
@@ -25,6 +25,38 @@ By employing ONNX quantization, the size of the emotion detection model is reduc
  5. ONNX Quantization
 
 ## How To Run?
+Before the following steps make sure you have `git`, `Anaconda` or `miniconda` installed on your system.
+ 
+ **step 1. Clone the repository**
+ 
+  ```bash
+  xcv
+  ```
+ **step 2. Create a conda environment after opening the repository**
+
+  ```bash
+   conda create -p venv python=3.9 -y
+  ```
+  ```bash
+    conda activate venv/
+  ```
+
+ **step 3. Install the requirements**
+
+  ```bash
+   pip install -r requirements.txt
+  ```
+ **step 4. Run the application server**
+
+ ```bash
+  uvicorn service.main:app
+ ```
+ **step 5. Prediction application**
+
+ ```bash
+  http://localhost:8000/docs
+ ```
+
 
 ## **Future Improvements**
 Here are a few potential areas for future improvement and development of the Human Emotion Detection CV Project:
