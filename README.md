@@ -30,7 +30,7 @@ Before the following steps make sure you have `git`, `Anaconda` or `miniconda` i
  **step 1. Clone the repository**
  
   ```bash
-  xcv
+  https://github.com/Prashantkhobragade/Human_Emotion_Detection.git
   ```
  **step 2. Create a conda environment after opening the repository**
 
