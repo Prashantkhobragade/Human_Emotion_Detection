@@ -69,6 +69,9 @@ Here are a few potential areas for future improvement and development of the Hum
  
 4. **Additional Emotion Classes:** Extend the model to detect and classify more emotional states beyond angry, happy, and sad.
 
+## DISCLAIMER
+This is a proof-of-concept project. The model is accurately predicting happy classes, but it seems to be getting confused with the sad and angry classes. This confusion may be due to misclassifications in the labeled data, which I discovered while reviewing the wandb dashboard. 
+
 ## Acknowledgments
 This project builds upon various open-source libraries, frameworks, and datasets. We would like to acknowledge the contributions of the research community and express our gratitude to the creators and maintainers of these resources.
 
